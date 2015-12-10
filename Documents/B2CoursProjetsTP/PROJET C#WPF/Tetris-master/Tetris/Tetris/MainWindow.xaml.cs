@@ -110,6 +110,17 @@ namespace Tetris
             m_ProchainePiece = PieceAuHasard();
         }
 
+        public bool BlockPiece(int ligne)
+        {
+            bool block = true;
+
+            if (DeplacementPiece(1, 0, 0) == null/*check si c'est vide mais null ne marche pas*/)
+            {
+                block = false;
+            }
+            return block;
+        }
+
         #region Timer 
 
         //private void StartAscenscion(object sender, EventArgs e)
@@ -144,11 +155,34 @@ namespace Tetris
             return true;
         }
 
+        //public TetrisValeur tmp;
+
+        //public void StartNewPiece()
+        //{
+        //    if (m_ProchainePiece + 1 <= 6)
+        //    {
+        //        tmp = m_ProchainePiece + 1;
+        //        m_PieceCourante = m_ProchainePiece;
+        //        m_ProchainePiece = tmp;
+        //    }
+        //    else if (m_ProchainePiece + 1 > 6)
+        //        m_ProchainePiece + 1 = 0;
+        //    AfficherPiece();
+        // }
+
         //fait le deplacement et verifie la possibilité de se deplacer dans la grille
         // Le e.modifiers doit enregistrer la seconde touche sur le clavier
         private void Window_KeyDown_1(object sender, System.Windows.Forms.KeyEventArgs e)
         {
-            if (e.KeyCode.Equals(Key.Up))
+            if (e.KeyCode.Equals(Key.Up) || e.KeyCode.Equals(Key.Down) || e.KeyCode.Equals(Key.Left) || e.KeyCode.Equals(Key.Right))
+            {
+                if (BlockPiece() == false)
+                {
+                    StartNewPiece();
+                }
+            }
+
+            else if (e.KeyCode.Equals(Key.Up))
             {
                 DeplacementPiece(0, 0, 1);
             }
@@ -184,8 +218,8 @@ namespace Tetris
                         DeplacementPiece(0, 1, 0);
                     }
                 }
-            else
-                DeplacementPiece(0, -1, 0);
+                else
+                    DeplacementPiece(0, -1, 0);
             }
 
             // Aller à Droite
