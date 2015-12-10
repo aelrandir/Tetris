@@ -1,0 +1,28 @@
+C:\Users\Pierre\Desktop\EPSI\B2\C#\Tetris\Tetris\bin\Debug\Tetris.exe.config
+C:\Users\Pierre\Desktop\EPSI\B2\C#\Tetris\Tetris\bin\Debug\Tetris.exe
+C:\Users\Pierre\Desktop\EPSI\B2\C#\Tetris\Tetris\bin\Debug\Tetris.pdb
+C:\Users\Pierre\Desktop\EPSI\B2\C#\Tetris\Tetris\obj\Debug\Tetris.csprojResolveAssemblyReference.cache
+C:\Users\Pierre\Desktop\EPSI\B2\C#\Tetris\Tetris\obj\Debug\MainWindow.g.cs
+C:\Users\Pierre\Desktop\EPSI\B2\C#\Tetris\Tetris\obj\Debug\App.g.cs
+C:\Users\Pierre\Desktop\EPSI\B2\C#\Tetris\Tetris\obj\Debug\Tetris_MarkupCompile.cache
+C:\Users\Pierre\Desktop\EPSI\B2\C#\Tetris\Tetris\obj\Debug\Tetris_MarkupCompile.lref
+C:\Users\Pierre\Desktop\EPSI\B2\C#\Tetris\Tetris\obj\Debug\MainWindow.baml
+C:\Users\Pierre\Desktop\EPSI\B2\C#\Tetris\Tetris\obj\Debug\Tetris.g.resources
+C:\Users\Pierre\Desktop\EPSI\B2\C#\Tetris\Tetris\obj\Debug\Tetris.Properties.Resources.resources
+C:\Users\Pierre\Desktop\EPSI\B2\C#\Tetris\Tetris\obj\Debug\Tetris.csproj.GenerateResource.Cache
+C:\Users\Pierre\Desktop\EPSI\B2\C#\Tetris\Tetris\obj\Debug\Tetris.exe
+C:\Users\Pierre\Desktop\EPSI\B2\C#\Tetris\Tetris\obj\Debug\Tetris.pdb
+C:\Users\Laurinne\Documents\B2CoursProjetsTP\PROJET C#WPF\Tetris-master\Tetris\Tetris\bin\Debug\Tetris.exe.config
+C:\Users\Laurinne\Documents\B2CoursProjetsTP\PROJET C#WPF\Tetris-master\Tetris\Tetris\obj\Debug\Tetris.exe
+C:\Users\Laurinne\Documents\B2CoursProjetsTP\PROJET C#WPF\Tetris-master\Tetris\Tetris\obj\Debug\Tetris.pdb
+C:\Users\Laurinne\Documents\B2CoursProjetsTP\PROJET C#WPF\Tetris-master\Tetris\Tetris\obj\Debug\Tetris.csprojResolveAssemblyReference.cache
+C:\Users\Laurinne\Documents\B2CoursProjetsTP\PROJET C#WPF\Tetris-master\Tetris\Tetris\obj\Debug\MainWindow.g.cs
+C:\Users\Laurinne\Documents\B2CoursProjetsTP\PROJET C#WPF\Tetris-master\Tetris\Tetris\obj\Debug\App.g.cs
+C:\Users\Laurinne\Documents\B2CoursProjetsTP\PROJET C#WPF\Tetris-master\Tetris\Tetris\obj\Debug\Tetris_MarkupCompile.cache
+C:\Users\Laurinne\Documents\B2CoursProjetsTP\PROJET C#WPF\Tetris-master\Tetris\Tetris\obj\Debug\Tetris_MarkupCompile.lref
+C:\Users\Laurinne\Documents\B2CoursProjetsTP\PROJET C#WPF\Tetris-master\Tetris\Tetris\bin\Debug\Tetris.exe
+C:\Users\Laurinne\Documents\B2CoursProjetsTP\PROJET C#WPF\Tetris-master\Tetris\Tetris\bin\Debug\Tetris.pdb
+C:\Users\Laurinne\Documents\B2CoursProjetsTP\PROJET C#WPF\Tetris-master\Tetris\Tetris\obj\Debug\MainWindow.baml
+C:\Users\Laurinne\Documents\B2CoursProjetsTP\PROJET C#WPF\Tetris-master\Tetris\Tetris\obj\Debug\Tetris.g.resources
+C:\Users\Laurinne\Documents\B2CoursProjetsTP\PROJET C#WPF\Tetris-master\Tetris\Tetris\obj\Debug\Tetris.Properties.Resources.resources
+C:\Users\Laurinne\Documents\B2CoursProjetsTP\PROJET C#WPF\Tetris-master\Tetris\Tetris\obj\Debug\Tetris.csproj.GenerateResource.Cache
