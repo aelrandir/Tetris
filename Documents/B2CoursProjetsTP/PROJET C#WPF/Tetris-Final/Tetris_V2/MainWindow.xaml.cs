@@ -29,7 +29,8 @@ namespace Tetris_V2
         public MainWindow()
         {
             InitializeComponent();
-
+            
+            // timer pour la descente de la piece
             DispatcherTimer timer = new DispatcherTimer();
             timer.Interval = TimeSpan.FromMilliseconds(500);
             timer.Tick += timer_Tick;
@@ -37,7 +38,7 @@ namespace Tetris_V2
 
             main = this;
             l_piece.ChoisirPiece();
-            l_deplacement.AfficherPiece(l_piece.PieceAuHasard());
+            l_deplacement.AfficherPiece(l_piece.pieceCourante);
         }
 
         void timer_Tick(object sender, EventArgs e)
@@ -47,11 +48,19 @@ namespace Tetris_V2
 
 
         private TetrisPiece[,] l_matriceGrille = new TetrisPiece[20, 10];
+        private TetrisPiece[,] l_matriceGrilleRemplie = new TetrisPiece[20,10];
 
         public TetrisPiece[,] matriceGrille
         {
             get { return l_matriceGrille; }
-            set { l_matriceGrille = value; }
+            set { l_matriceGrilleRemplie = value; }
+        }
+
+        //Save de la matriceGrille vide avec les pieces sauvegardée dedans
+        public TetrisPiece[,] matriceGrilleRemplie
+        {
+            get { return l_matriceGrilleRemplie; }
+            set { l_matriceGrilleRemplie = value; }
         }
 
         public void Deplacement (object sender, KeyEventArgs e)

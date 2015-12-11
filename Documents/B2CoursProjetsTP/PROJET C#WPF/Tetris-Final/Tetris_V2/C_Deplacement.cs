@@ -91,6 +91,7 @@ namespace Tetris_V2
         {
             int[] t_ligne = new int[4];
             int[] t_colonne = new int[4];
+            int count = 0;
 
             for (int i = 0; i < 4; i++)
             {
@@ -105,6 +106,7 @@ namespace Tetris_V2
                 t_colonne[i] = colonne;
             }
 
+            //Gestion pour ne pas sortir de la map (grille)
             for (int i = 0; i < 4; i++)
             {
                 if (t_colonne[i] == -1)
@@ -125,15 +127,19 @@ namespace Tetris_V2
 
                 if (t_ligne[i] == 19)
                 {
+                    count = count + 1;
                     MainWindow.main.l_piece.StartNewPiece();
                 }
             }
 
+            //Les commentaires correspondent a la boucle qui devait permettre de bloquer la piece en bas de la map
             for (int i = 0; i < 4; i++)
             {
-                MainWindow.main.matriceGrille[t_ligne[i], t_colonne[i]] = piecePlacer;
+                //if (count == 0)
+                    MainWindow.main.matriceGrille[t_ligne[i], t_colonne[i]] = piecePlacer;
+                //else
+                  //  MainWindow.main.matriceGrilleRemplie[t_ligne[i], t_colonne[i]] = piecePlacer;
                 AfficherBlockPiece(t_ligne[i], t_colonne[i], piecePlacer);
-                //MainWindow.main.label.Content = MainWindow.main.matriceGrille;
             }
         }
     }

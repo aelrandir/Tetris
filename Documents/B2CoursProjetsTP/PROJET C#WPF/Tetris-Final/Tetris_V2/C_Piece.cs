@@ -57,6 +57,7 @@ namespace Tetris_V2
             get { return l_matricePieces; }
         }
 
+
         //public void AfficherProchainePiece()
         //{
         //    if(prochainePiece == TetrisPiece.Carre_Rose)
@@ -65,6 +66,44 @@ namespace Tetris_V2
         //        MainWindow.main.NxtPic.Source = uri;
         //    }
         //}
+
+        public void GetImage()
+        {
+            if (l_prochainePiece == TetrisPiece.Carre_Rose)
+            {
+                MainWindow.main.NxtPic.Source = new BitmapImage(new Uri("Carre_Rose.PNG", UriKind.Relative));
+            }
+
+            if (l_prochainePiece == TetrisPiece.Ligne_Rouge)
+            {
+                MainWindow.main.NxtPic.Source = new BitmapImage(new Uri("Image/Ligne_Rouge.PNG", UriKind.Relative));
+            }
+
+            if (l_prochainePiece == TetrisPiece.Triangle_Cyan)
+            {
+                MainWindow.main.NxtPic.Source = new BitmapImage(new Uri("Image/Triangle_Cyan.PNG", UriKind.Relative));
+            }
+
+            if (l_prochainePiece == TetrisPiece.Zigzag1_Orange)
+            {
+                MainWindow.main.NxtPic.Source = new BitmapImage(new Uri("Image/Zigzag1_Orange.PNG", UriKind.Relative));
+            }
+
+            if (l_prochainePiece == TetrisPiece.Zigzag2_Vert)
+            {
+                MainWindow.main.NxtPic.Source = new BitmapImage(new Uri("Image/Zigzag2_Vert.PNG", UriKind.Relative));
+            }
+
+            if (l_prochainePiece == TetrisPiece.L1_Jaune)
+            {
+                MainWindow.main.NxtPic.Source = new BitmapImage(new Uri("Image/L1_Jaune.PNG", UriKind.Relative));
+            }
+
+            if (l_prochainePiece == TetrisPiece.L2_Bleu)
+            {
+                MainWindow.main.NxtPic.Source = new BitmapImage(new Uri("Image/L2_Bleu.PNG", UriKind.Relative));
+            }
+        }
 
         private static int[,,,] l_matricePieces =
            {
