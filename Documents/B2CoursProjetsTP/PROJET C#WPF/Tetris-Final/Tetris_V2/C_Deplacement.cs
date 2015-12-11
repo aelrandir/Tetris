@@ -32,7 +32,7 @@ namespace Tetris_V2
 
                 if (Couleur == TetrisPiece.Carre_Rose)
                 {
-                    block.Fill = new SolidColorBrush(System.Windows.Media.Colors.Blue);
+                    block.Fill = new SolidColorBrush(System.Windows.Media.Colors.Pink);
                 }
 
                 if (Couleur == TetrisPiece.Ligne_Rouge)
@@ -42,27 +42,27 @@ namespace Tetris_V2
 
                 if (Couleur == TetrisPiece.Triangle_Cyan)
                 {
-                    block.Fill = new SolidColorBrush(System.Windows.Media.Colors.Green);
+                    block.Fill = new SolidColorBrush(System.Windows.Media.Colors.Cyan);
                 }
 
                 if (Couleur == TetrisPiece.Zigzag1_Orange)
                 {
-                    block.Fill = new SolidColorBrush(System.Windows.Media.Colors.Cyan);
+                    block.Fill = new SolidColorBrush(System.Windows.Media.Colors.Orange);
                 }
 
                 if (Couleur == TetrisPiece.Zigzag2_Vert)
                 {
-                    block.Fill = new SolidColorBrush(System.Windows.Media.Colors.Gray);
+                    block.Fill = new SolidColorBrush(System.Windows.Media.Colors.Green);
                 }
 
                 if (Couleur == TetrisPiece.L1_Jaune)
                 {
-                    block.Fill = new SolidColorBrush(System.Windows.Media.Colors.Pink);
+                    block.Fill = new SolidColorBrush(System.Windows.Media.Colors.Yellow);
                 }
 
                 if (Couleur == TetrisPiece.L2_Bleu)
                 {
-                    block.Fill = new SolidColorBrush(System.Windows.Media.Colors.Yellow);
+                    block.Fill = new SolidColorBrush(System.Windows.Media.Colors.Blue);
                 }
 
                 block.SetValue(Grid.ColumnProperty, colonne);
@@ -133,7 +133,7 @@ namespace Tetris_V2
             {
                 MainWindow.main.matriceGrille[t_ligne[i], t_colonne[i]] = piecePlacer;
                 AfficherBlockPiece(t_ligne[i], t_colonne[i], piecePlacer);
-                MainWindow.main.label.Content = MainWindow.main.matriceGrille;
+                //MainWindow.main.label.Content = MainWindow.main.matriceGrille;
             }
         }
     }

@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
+
 
 namespace Tetris_V2
 {
@@ -27,10 +29,22 @@ namespace Tetris_V2
         public MainWindow()
         {
             InitializeComponent();
+
+            DispatcherTimer timer = new DispatcherTimer();
+            timer.Interval = TimeSpan.FromMilliseconds(500);
+            timer.Tick += timer_Tick;
+            timer.Start();
+
             main = this;
             l_piece.ChoisirPiece();
             l_deplacement.AfficherPiece(l_piece.PieceAuHasard());
         }
+
+        void timer_Tick(object sender, EventArgs e)
+        {
+            l_deplacement.DeplacementPiece(1, 0, 0);
+        }
+
 
         private TetrisPiece[,] l_matriceGrille = new TetrisPiece[20, 10];
 
@@ -42,26 +56,24 @@ namespace Tetris_V2
 
         public void Deplacement (object sender, KeyEventArgs e)
         {
-            C_Deplacement deplacement = new C_Deplacement();
-
             if (e.Key.Equals(Key.Up))
             {
-                deplacement.DeplacementPiece(0, 0, 1);
+                l_deplacement.DeplacementPiece(0, 0, 1);
             }
 
             else if (e.Key.Equals(Key.Down))
             {
-                deplacement.DeplacementPiece(1, 0, 0);
+                l_deplacement.DeplacementPiece(1, 0, 0);
             }
 
             else if (e.Key.Equals(Key.Left))
             {
-                deplacement.DeplacementPiece(0, -1, 0);
+                l_deplacement.DeplacementPiece(0, -1, 0);
             }
 
             else if (e.Key.Equals(Key.Right))
             {
-                deplacement.DeplacementPiece(0, 1, 0);
+                l_deplacement.DeplacementPiece(0, 1, 0);
             }
         }
     }

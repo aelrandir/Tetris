@@ -57,6 +57,15 @@ namespace Tetris_V2
             get { return l_matricePieces; }
         }
 
+        //public void AfficherProchainePiece()
+        //{
+        //    if(prochainePiece == TetrisPiece.Carre_Rose)
+        //    {
+        //        Uri uri = new Uri("Image/Carre_Rose.png");
+        //        MainWindow.main.NxtPic.Source = uri;
+        //    }
+        //}
+
         private static int[,,,] l_matricePieces =
            {
                     {	// Le carre
