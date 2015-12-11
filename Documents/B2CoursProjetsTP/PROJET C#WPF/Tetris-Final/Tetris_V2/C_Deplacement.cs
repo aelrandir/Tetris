@@ -17,7 +17,6 @@ namespace Tetris_V2
 {
     public class C_Deplacement
     {
-        
         public void ChangerCoordonee(int p_ligne, int p_colonne, int p_rotation)
         {      
             MainWindow.main.l_piece.rotation += p_rotation;
@@ -90,20 +89,51 @@ namespace Tetris_V2
 
         public void AfficherPiece(TetrisPiece piecePlacer)
         {
-            for (int block = 0; block < 4; block++)
+            int[] t_ligne = new int[4];
+            int[] t_colonne = new int[4];
+
+            for (int i = 0; i < 4; i++)
             {
                 int PieceCourante = (int)MainWindow.main.l_piece.pieceCourante;
-                int ligneAct = MainWindow.main.l_piece.matricePieces[PieceCourante, MainWindow.main.l_piece.rotation % 4, block, 0];
-                int colonneAct = MainWindow.main.l_piece.matricePieces[PieceCourante, MainWindow.main.l_piece.rotation % 4, block, 1];
+                int ligneAct = MainWindow.main.l_piece.matricePieces[PieceCourante, MainWindow.main.l_piece.rotation % 4, i, 0];
+                int colonneAct = MainWindow.main.l_piece.matricePieces[PieceCourante, MainWindow.main.l_piece.rotation % 4, i, 1];
 
                 int ligne = MainWindow.main.l_piece.lignePiece + ligneAct;
                 int colonne = MainWindow.main.l_piece.colonnePiece + colonneAct;
 
-                if (ligne >= 0 && ligne < 20 && colonne >= 0 && colonne < 10)
+                t_ligne[i] = ligne;
+                t_colonne[i] = colonne;
+            }
+
+            for (int i = 0; i < 4; i++)
+            {
+                if (t_colonne[i] == -1)
                 {
-                    MainWindow.main.matriceGrille[ligne, colonne] = piecePlacer;
-                    AfficherBlockPiece(ligne, colonne, piecePlacer);
+                    t_colonne[0] += 1;
+                    t_colonne[1] += 1;
+                    t_colonne[2] += 1;
+                    t_colonne[3] += 1;
                 }
+
+                if (t_colonne[i] == 21)
+                {
+                    t_colonne[0] -= 1;
+                    t_colonne[1] -= 1;
+                    t_colonne[2] -= 1;
+                    t_colonne[3] -= 1;
+                }
+
+                if (t_ligne[i] == 19)
+                {
+                    MainWindow.main.l_piece.StartNewPiece();
+                }
+            }
+
+            for (int i = 0; i < 4; i++)
+            {
+                MainWindow.main.matriceGrille[t_ligne[i], t_colonne[i]] = piecePlacer;
+                AfficherBlockPiece(t_ligne[i], t_colonne[i], piecePlacer);
+                MainWindow.main.label.Content = MainWindow.main.matriceGrille;
             }
         }
     }

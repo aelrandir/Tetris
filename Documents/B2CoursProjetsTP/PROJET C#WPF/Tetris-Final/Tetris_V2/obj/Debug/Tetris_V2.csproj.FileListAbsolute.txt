@@ -12,17 +12,3 @@ C:\Users\Pierre\Desktop\EPSI\B2\C#\Tetris_V2\Tetris_V2\Tetris_V2\obj\Debug\Tetri
 C:\Users\Pierre\Desktop\EPSI\B2\C#\Tetris_V2\Tetris_V2\Tetris_V2\obj\Debug\Tetris_V2.csproj.GenerateResource.Cache
 C:\Users\Pierre\Desktop\EPSI\B2\C#\Tetris_V2\Tetris_V2\Tetris_V2\obj\Debug\Tetris_V2.exe
 C:\Users\Pierre\Desktop\EPSI\B2\C#\Tetris_V2\Tetris_V2\Tetris_V2\obj\Debug\Tetris_V2.pdb
-C:\Users\Laurinne\Documents\B2CoursProjetsTP\PROJET C#WPF\Tetris-Final\Tetris_V2\bin\Debug\Tetris_V2.exe.config
-C:\Users\Laurinne\Documents\B2CoursProjetsTP\PROJET C#WPF\Tetris-Final\Tetris_V2\obj\Debug\Tetris_V2.exe
-C:\Users\Laurinne\Documents\B2CoursProjetsTP\PROJET C#WPF\Tetris-Final\Tetris_V2\obj\Debug\Tetris_V2.pdb
-C:\Users\Laurinne\Documents\B2CoursProjetsTP\PROJET C#WPF\Tetris-Final\Tetris_V2\bin\Debug\Tetris_V2.exe
-C:\Users\Laurinne\Documents\B2CoursProjetsTP\PROJET C#WPF\Tetris-Final\Tetris_V2\bin\Debug\Tetris_V2.pdb
-C:\Users\Laurinne\Documents\B2CoursProjetsTP\PROJET C#WPF\Tetris-Final\Tetris_V2\obj\Debug\Tetris_V2.csprojResolveAssemblyReference.cache
-C:\Users\Laurinne\Documents\B2CoursProjetsTP\PROJET C#WPF\Tetris-Final\Tetris_V2\obj\Debug\MainWindow.g.cs
-C:\Users\Laurinne\Documents\B2CoursProjetsTP\PROJET C#WPF\Tetris-Final\Tetris_V2\obj\Debug\App.g.cs
-C:\Users\Laurinne\Documents\B2CoursProjetsTP\PROJET C#WPF\Tetris-Final\Tetris_V2\obj\Debug\Tetris_V2_MarkupCompile.cache
-C:\Users\Laurinne\Documents\B2CoursProjetsTP\PROJET C#WPF\Tetris-Final\Tetris_V2\obj\Debug\Tetris_V2_MarkupCompile.lref
-C:\Users\Laurinne\Documents\B2CoursProjetsTP\PROJET C#WPF\Tetris-Final\Tetris_V2\obj\Debug\MainWindow.baml
-C:\Users\Laurinne\Documents\B2CoursProjetsTP\PROJET C#WPF\Tetris-Final\Tetris_V2\obj\Debug\Tetris_V2.g.resources
-C:\Users\Laurinne\Documents\B2CoursProjetsTP\PROJET C#WPF\Tetris-Final\Tetris_V2\obj\Debug\Tetris_V2.Properties.Resources.resources
-C:\Users\Laurinne\Documents\B2CoursProjetsTP\PROJET C#WPF\Tetris-Final\Tetris_V2\obj\Debug\Tetris_V2.csproj.GenerateResource.Cache
